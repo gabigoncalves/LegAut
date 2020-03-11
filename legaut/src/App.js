@@ -1,18 +1,27 @@
 import React from 'react';
 import logo from './images/logo.png'
 import './App.css';
+import Tabela from './components/Tabela';
+import ContaClick from './components/ContaClick';
+import TabelaTeste from './components/TabelaTeste';
 
 function App() {
   return (
     <div className="container">
-      <div class="infoBar">
+      <div className="infoBar">
         <img src={logo} alt="logo" />
       </div>
       <div className="body">
-        <p>
-        Johnnie Walker comprou uma Ferrari por R$ 1.000.000,00 de seu conhecido Jack Daniels.
-        </p>
+        <p> Johnnie Walker comprou uma Ferrari por R$ 1.000.000,00 de seu conhecido Jack Daniels. </p>
+        <Tabela/>
+        {/* <h5>Cliques:</h5>
+        <ContaClick /> */}
       </div>
+
+      <div>
+      <TabelaTeste />
+      </div>
+
     </div>
   );
 }
