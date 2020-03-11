@@ -13,6 +13,7 @@ const InserirNovoRotulo = ({ onSubmit }) => {
     onSubmit(newItem);
   }
 
+
   return (
     <div>
       <form onSubmit={submit}>

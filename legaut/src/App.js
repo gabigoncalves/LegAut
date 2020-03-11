@@ -14,14 +14,11 @@ function App() {
       <div className="body">
         <p> Johnnie Walker comprou uma Ferrari por R$ 1.000.000,00 de seu conhecido Jack Daniels. </p>
         <Tabela/>
-        {/* <h5>Cliques:</h5>
-        <ContaClick /> */}
       </div>
 
-      <div>
-      <TabelaTeste />
-      </div>
-
+      {/* <div>
+        <TabelaTeste />
+      </div> */}
     </div>
   );
 }
