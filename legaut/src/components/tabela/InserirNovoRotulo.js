@@ -13,7 +13,6 @@ const InserirNovoRotulo = ({ onSubmit }) => {
     onSubmit(newItem);
   }
 
-
   return (
     <div>
       <form onSubmit={submit}>
@@ -31,4 +30,4 @@ const InserirNovoRotulo = ({ onSubmit }) => {
   )
 };
 
-export default InserirNovoRotulo;
+export default InserirNovoRotulo; 

@@ -1,15 +1,1 @@
-{  
-    "textos":[  
-       { 
-          "texto":"Jack Daniels",
-          "rotulo":"nome",
-          "texto_id":1
-       },
-  
-       { 
-            "texto":"R$ 1.000.000,00",
-            "rotulo":"preço",
-            "texto_id": 2
-       }
-    ]
-  }
+{"textos":[{"texto":"Jack Daniels","rotulo":"nome","texto_id":1},{"texto":"R$ 1.000.000,00","rotulo":"preço","texto_id":2},{"texto":"bbb","rotulo":"aaa","texto_id":3}]}

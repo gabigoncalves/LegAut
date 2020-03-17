@@ -1,64 +1,22 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
 import '../App.css';
 import Conteudo from './tabela/Conteudo'
 import InserirNovoRotulo from './tabela/InserirNovoRotulo'
 
 const Tabela = () => {
-
   const [rotulos, setRotulos] = useState([]);
-  const [newItem, setNewItem] = useState('');
-  const [arrayRotulos, setArrayRotulos] = useState('');
 
-  //função que envia o rótulo digitado
-  function setNewRow({target}) {
-    setNewItem(target.value);
-    console.log('texto digitado: ', target.value)
-    console.log('teste: ', arrayRotulos)
-  }
-
-  function submit(e) {
-    e.preventDefault();
-    addNewRotulo(newItem);
-  }
-
-  //função para adicionar novo rótulo na tabela
   function addNewRotulo(rotulo) {
     const itens = Array.from(rotulos);
     itens.push({id: rotulos.length, value: rotulo});
     setRotulos(itens);
     console.log('itens: ', itens)
-    itens.map(({id, value}, index) => (console.log('value', value)))
-
-
-    for(let i=0; i < itens.length; i++) {
-        if (itens[i].value) {
-            console.log('itens[i].value: ', itens[i].value)
-            // setArrayRotulos(Array.from(itens[i].value))
-            // console.log('arrayRotulos: ', arrayRotulos)
-
-            
-        }
-    }
   }
 
   return (
     <div className="App">
       <div className="App-tabela">
-        {/* <InserirNovoRotulo onSubmit={addNewRotulo} /> */}
-        <div>
-      <form onSubmit={submit}>
-        <input
-          id = "rotulo"
-          className="Todo-input"
-          placeholder="Digite um novo rótulo"
-          onChange={setNewRow}
-        />
-        <button type="submit">
-          +
-        </button>
-      </form>
-    </div>
+        <InserirNovoRotulo onSubmit={addNewRotulo} />
       </div>
       <div>
             <table border="1" cellSpacing="10">
@@ -83,7 +41,3 @@ const Tabela = () => {
 }
 
 export default Tabela;
-
-// Tabela.propTypes = {
-//     coluna: PropTypes.string.isRequired
-// }

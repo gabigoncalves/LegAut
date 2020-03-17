@@ -1,8 +1,8 @@
 import React from 'react';
+import axios from 'axios';
 import logo from './images/logo.png'
 import './App.css';
 import Tabela from './components/Tabela';
-import ContaClick from './components/ContaClick';
 import TabelaTeste from './components/TabelaTeste';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
         <Tabela/>
       </div>
 
-      {/* <div>
+      <div>
         <TabelaTeste />
-      </div> */}
+      </div>
     </div>
   );
 }
